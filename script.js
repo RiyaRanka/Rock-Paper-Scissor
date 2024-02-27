@@ -1,21 +1,10 @@
-// Challenge 3: Rock Paper Scissors
-// if you wanna go into 'this' deep look at JavaScript Object Oriented Programming
-// // Rough expression
 function rpsGame(yourChoice) {
     console.log(yourChoice);
     var humanChoice, botChoice;
     humanChoice = yourChoice.id;
 
     botChoice = numberToChoice(randToRpsInt());
-    // alert(botChoice);
     console.log('Computer choice:', botChoice);
-    //Math.floor(Math.random() *3); print number from 0 to 1 randomly
-    // ['rock', 'paper', 'scissors'] [0]
-    // ['rock', 'paper', 'scissors'] [1]
-    // ['rock', 'paper', 'scissors'] [2]
-    // OR
-    // ['rock', 'paper', 'scissors'] [Math.floor(Math.random() *3)]
-
     results = decideWinner(humanChoice, botChoice); //[0, 1] human lost | bot won
     console.log(results);
 
